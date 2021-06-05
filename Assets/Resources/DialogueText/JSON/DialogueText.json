@@ -1,0 +1,255 @@
+[
+  {
+    "Warrior": "Hi! You don't look like an ordinary traveler. What's your name?"
+  },
+  {
+    "Wizard": "My name is the Wizard. You're right, I'm an unusual adventurer. I am studying dwarven runes to improve my magical abilities. There is an entrance to the dwarven dungeons not far from here. That's where I'm going."
+  },
+  {
+    "Warrior": "What a coincidence! I'm going there, too, but my goals are more material. Why don't we go together? The two of us are safer. What do you say?"
+  },
+  {
+    "?": [
+      {
+        "1": [
+          "+20 Yes",
+          {
+            "Wizard": "I agree, let's go together"
+          },
+          {
+            "Warrior": "Great! We're moving out early in the morning, partner."
+          },
+          {
+            "?": [
+              {
+                "1": [
+                  "+40 elven blade",
+                  {
+                    "Wizard": "Yesterday I played dice with a drunken elf in a tavern and won this blade. I don't use that kind of weapon, but you might need it. Hold it (gift an elven blade)."
+                  },
+                  {
+                    "Warrior": "This is a very valuable gift! Thanks!"
+                  },
+                  {
+                    "RestoreIndex": "RestoreIndex"
+                  }
+                ]
+              },
+              {
+                "2": [
+                  "+20 healing potion",
+                  {
+                    "Wizard": "I've got a healing potion lying around. Here, I'll brew some more (give you a healing potion)."
+                  },
+                  {
+                    "Warrior": "Healing potion are not superfluous. Thanks!"
+                  },
+                  {
+                    "RestoreIndex": "RestoreIndex"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Wizard": "Returning to the room late at night from a walk, you hear someone swearing. It turns out to be your friend, the warrior. He got into a verbal altercation with a thin, hooded stranger. You watch as another hooded man sneaks up behind the warrior and prepares to strike. Your actions?"
+          },
+          {
+            "?": [
+              {
+                "1": [
+                  "+60 Throw a lightning bolt at a stranger with a knife",
+                  {
+                    "Wizard": "(You're casting a spell. An electric shock flies from your fingers, which throws the stranger away. His partner quickly runs away before the warrior has time to realize what happened.)"
+                  },
+                  {
+                    "Warrior": "I want to say thank you, mage! You saved my life today."
+                  },
+                  {
+                    "EOD": "EOD"
+                  }
+                ]
+              },
+              {
+                "2": [
+                  "+40 Use telepathy",
+                  {
+                    "Wizard": "You warn the warrior about a stranger with a knife. The warrior abruptly turns around and knocks back two opponents. One rolled down the stairs. The other one reached for the dagger, but you singed his clothes. The stranger got scared and ran past you screaming."
+                  },
+                  {
+                    "Warrior": "Not a bad trick. How did you manage to warn me? Telepathy? I thought so. Anyway, thank you!"
+                  },
+                  {
+                    "EOD": "EOD"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "2": [
+          "-20 No",
+          {
+            "Wizard": "Thank you, but I prefer to travel alone. Suddenly I'll set fire to my partner with fireballs."
+          },
+          {
+            "Warrior": "I understand. If you change your mind, I'll be in the next room."
+          },
+          {
+            "?": [
+              {
+                "1": [
+                  "+20 Agree",
+                  {
+                    "Wizard": "I'll think about your offer."
+                  },
+                  {
+                    "EOD": "EOD"
+                  }
+                ]
+              },
+              {
+                "2": [
+                  "-40 Disagree",
+                  {
+                    "Wizard": "I do not think so"
+                  },
+                  {
+                    "Wizard": "(You're having dinner at the inn and you're worried about tomorrow's hike. Suddenly, two hooded strangers approach you. The one above takes off his hood and sits down next to you. After a while, he starts talking.)"
+                  },
+                  {
+                    "Rogue": "I know you have a map of the dwarven dungeons. This map has what I need. You give it to me right now, or my partner will kill you. Do not look at the visitors, they will not have time to help you."
+                  },
+                  {
+                    "Wizard": "(Time is short, you can only manage to cast a spell on one opponent. Who will it be?)"
+                  },
+                  {
+                    "?": [
+                      {
+                        "1": [
+                          "0 Attack the enemy who is standing behind",
+                          {
+                            "Wizard": "(You use a stun spell. The opponent who was standing behind collapsed to the ground. Time seemed to have stopped. You realize that right now you need to hit the enemy from the front, but it's too late. The robber threw a dagger at you and hit you in the heart. Your eyes go dark. There is a terrible noise all around, and then silence...)"
+                          },
+                          {
+                            "EOD": "EOD"
+                          }
+                        ]
+                      },
+                      {
+                        "2": [
+                          "0 Attack the opponent who is sitting in front of you",
+                          {
+                            "Wizard": "(You use a fire arrow on the interlocutor. The opponent who was standing behind you pulls out a knife and is about to stab you, but someone stops him. It was a warrior. He grabbed his opponent and threw him against the wall like a sack of potatoes. A robber with a burned face runs out of the inn, and his partner remains unconscious.)"
+                          },
+                          {
+                            "Warrior": "You never know where help might come from, right? I think I'm entitled to a reward."
+                          },
+                          {
+                            "?": [
+                              {
+                                "1": [
+                                  "+40 Gift a card",
+                                  {
+                                    "Wizard": "It's true. I think you deserve it. (give the card back)"
+                                  },
+                                  {
+                                    "EOD": "EOD"
+                                  }
+                                ]
+                              },
+                              {
+                                "2": [
+                                  "-40 Don't give away the card",
+                                  {
+                                    "Wizard": "No, I'll keep the card."
+                                  },
+                                  {
+                                    "Warrior": "Be careful, not everyone will be as patient as I am."
+                                  },
+                                  {
+                                    "EOD": "EOD"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "EOD": "EOD"
+          }
+        ]
+      },
+      {
+        "3": [
+          "+40 Excellent idea!",
+          {
+            "Wizard": "Excellent idea! It is necessary to prepare well for the campaign. I'll go brew some mana potions. Do you need any potions?"
+          },
+          {
+            "Warrior": "Yes, I could use some healing potions. I'll go collect weapons and supplies. We don't know how long we'll be there, so we'd better take more of everything."
+          },
+          {
+            "Wizard": "I agree"
+          },
+          {
+            "Wizard": "(You're having dinner at the inn and you're worried about tomorrow's hike. Suddenly, two hooded strangers approach you. The one above takes off his hood and sits down next to you. After a while, he starts talking.)"
+          },
+          {
+            "Rogue": "I know you have a map of the dwarven dungeons. This map has what I need. You give it to me right now, or my partner will kill you. Do not look at the visitors, they will not have time to help you."
+          },
+          {
+            "Warrior": "Take your time, stranger. This magician is with me. If you're threatening him, then you're threatening me. (Punch in the face)"
+          },
+          {
+            "Wizard": "(When the robber is knocked off by the warrior's blow, you use a stun spell and throw the robber's partner out of the inn. The robber himself remained unconscious.)"
+          },
+          {
+            "?": [
+              {
+                "1": [
+                  "+60 Say thank you to a new friend",
+                  {
+                    "Wizard": "Thank you, warrior! I'm glad you were there. Let me call you a friend."
+                  },
+                  {
+                    "Warrior": "I allow it, friend."
+                  },
+                  {
+                    "EOD": "EOD"
+                  }
+                ]
+              },
+              {
+                "2": [
+                  "+40 Just say thank you",
+                  {
+                    "Wizard": "Thank you, warrior! You're on time."
+                  },
+                  {
+                    "Warrior": "Glad to help, Wizard!"
+                  },
+                  {
+                    "EOD": "EOD"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "EOD": "EOD"
+          }
+        ]
+      }
+    ]
+  }
+]
