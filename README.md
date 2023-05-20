@@ -1,4 +1,4 @@
-# DialogSystem
+# DialogueSystem
 
 ## Description
 Example of a branching RPG-dialog system on Unity
@@ -9,7 +9,7 @@ Example of a branching RPG-dialog system on Unity
 
 ## Links to useful resources
 
-### Examples of dialog systems:
+### Examples of dialogue systems:
 - https://www.youtube.com/watch?v=mhEiJ_-jyTs&list=PLfhbBaEcybmg_toVHfK3-4Wj-ivik73OK
 - https://www.youtube.com/watch?v=WGWubpzz2pw
 - https://www.youtube.com/watch?v=pxpS8i7awgM
